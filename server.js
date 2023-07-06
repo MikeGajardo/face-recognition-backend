@@ -69,7 +69,7 @@ app.get('/profile/:id', (req, res) => {
 })
 
 // this function counts the amount of entries and adds + 1 to each user
-app.post('/image', (req, res) => {
+app.put('/image', (req, res) => {
     const { id } = req.body;
     let found = false;
     database.users.forEach(user => {
